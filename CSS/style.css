@@ -10,3 +10,36 @@ html{
 body{
     background-color: black;
 }
+h1{
+    color:#fff;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+
+}
+.search-input{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#user{
+    width:50rem;
+    height:4rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+button{
+    width:10rem;
+    height:4rem;
+    font-size: 2rem;
+}
+.main_container{
+    background-color: rgb(92, 90, 90);
+    height: 100%;
+    margin: 3rem 3rem;
+    border:2px solid white;
+}
