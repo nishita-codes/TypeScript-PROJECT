@@ -43,3 +43,59 @@ button{
     margin: 3rem 3rem;
     border:2px solid white;
 }
+
+.card{
+    min-width: 20 rem;
+    min-height:20rem;
+    background-color: #14253d;
+    padding:1rem;
+    border-radius: 1rem;
+    transition:all 0.3 linear;
+
+    &:hover{
+        transform:  translate(-2rem);
+        box-shadow: rgba(224,222,233,0.15) 0px 48px 100px 0px ;
+        -webkit-transform:  translate(-2rem);
+        -moz-transform:  translate(-2rem);
+        -ms-transform:  translate(-2rem);
+        -o-transform:  translate(-2rem);
+}
+}
+
+img{
+    max-width:100%;
+    width:22rem;
+    height:auto;
+    border-radius: 1rem;
+}
+
+.username{
+    padding-top:1rem;
+    color:#fff;
+}
+
+hr{
+    height:0.01rem;
+    border:0.1rem solid white;
+}
+
+.card-footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:3rem 0 0 0;
+}
+
+.card-footer img{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:50%;
+  border:0.2rem solid white;
+}
+
+.empty-msg{
+    width:100%;
+    text-align: center;
+    font-size: 2rem;
+    color:#fff;
+}

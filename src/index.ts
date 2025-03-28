@@ -28,10 +28,10 @@ async function  myCustomFetcher<T>(url:string, options?: RequestInit):Promise<T>
 // let display the card UI 
 const   showResultUI = (singleUser:UserData)=>{
    main_container.insertAdjacentHTML("beforeend",
-    `<div class="card>
+    `<div class="card">
     <img src=${singleUser.avatar_url} alt=${singleUser.login}/>
     <hr/>
-    <div class="card">
+    <div class="card-footer">
       <img src="${singleUser.avatar_url}" alt="${singleUser.login}"/>
       <a href="${singleUser.url}"> Github</a>
     </div>
