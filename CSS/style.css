@@ -19,6 +19,10 @@ h1{
     
 
 }
+a{
+    color:#fff;
+    font-size: 2rem;
+}
 .search-input{
     display: flex;
     justify-content: center;
@@ -45,6 +49,7 @@ button{
 }
 
 .card{
+    
     min-width: 20 rem;
     min-height:20rem;
     background-color: #14253d;
