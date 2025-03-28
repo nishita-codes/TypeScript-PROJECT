@@ -42,17 +42,21 @@ button{
     font-size: 2rem;
 }
 .main_container{
-    background-color: rgb(92, 90, 90);
-    height: 100%;
-    margin: 3rem 3rem;
-    border:2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8rem;
+    justify-content: center;
+    padding: 6rem 2rem;
+    background-color: rgb(35, 34, 34);
+    margin:3rem 3rem;
+
 }
 
 .card{
     
     min-width: 20 rem;
     min-height:20rem;
-    background-color: #14253d;
+    background-color: #101112;
     padding:1rem;
     border-radius: 1rem;
     transition:all 0.3 linear;

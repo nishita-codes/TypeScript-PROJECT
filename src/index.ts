@@ -51,7 +51,7 @@ fetchUserData("https://api.github.com/users");
 
 
 // let perform search functionality
-formSubmit.addEventListener('submit' , async (e)=>{
+formSubmit.addEventListener("submit" , async (e)=>{
     e.preventDefault();
 
     const searchTerm = getUsername.value.toLowerCase();
@@ -65,8 +65,10 @@ formSubmit.addEventListener('submit' , async (e)=>{
         return user.login.toLowerCase().includes(searchTerm);
       });
 
+      main_container.innerHTML = " ";
+
       if(matchingUsers.length === 0){
-        main_container.insertAdjacentHTML(
+        main_container?.insertAdjacentHTML(
             "beforeend",
             `<p class ="empty-msg"> No matching user found.</p>`
         )
@@ -78,6 +80,6 @@ formSubmit.addEventListener('submit' , async (e)=>{
     }catch(error){
         console.log(error);
     } 
-})
+});
 
 

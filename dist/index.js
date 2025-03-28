@@ -33,7 +33,7 @@ function fetchUserData(url) {
 // default function call
 fetchUserData("https://api.github.com/users");
 // let perform search functionality
-formSubmit.addEventListener('submit', async (e) => {
+formSubmit.addEventListener("submit", async (e) => {
     e.preventDefault();
     const searchTerm = getUsername.value.toLowerCase();
     try {
@@ -42,8 +42,9 @@ formSubmit.addEventListener('submit', async (e) => {
         const matchingUsers = allUserInfo.filter((user) => {
             return user.login.toLowerCase().includes(searchTerm);
         });
+        main_container.innerHTML = " ";
         if (matchingUsers.length === 0) {
-            main_container.insertAdjacentHTML("beforeend", `<p class ="empty-msg"> No matching user found.</p>`);
+            main_container?.insertAdjacentHTML("beforeend", `<p class ="empty-msg"> No matching user found.</p>`);
         }
         else {
             for (const singleUser of matchingUsers) {
